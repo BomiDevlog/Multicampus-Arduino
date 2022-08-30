@@ -79,6 +79,8 @@
 #if defined(ESP8266) || defined(ESP32)
 #include <functional>
 #define MQTT_CALLBACK_SIGNATURE std::function<void(char*, uint8_t*, unsigned int)> callback
+// 변수명, 변수타입까지 포함해서 define 한 것.
+// 변수명 callback 변수타입 std::function<void(char*, uint8_t*, unsigned int)
 #else
 #define MQTT_CALLBACK_SIGNATURE void (*callback)(char*, uint8_t*, unsigned int)
 #endif
