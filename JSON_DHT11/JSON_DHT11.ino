@@ -18,7 +18,7 @@ void setup() {
 
 void makeJson(float temp, float humi){
     
-  JsonObject root = doc.to<JsonObject>();
+  JsonObject root = doc.to<JsonObject>(); //json형식
   
   root["Temp"] = temp;   
   root["Humi"] = humi; 
